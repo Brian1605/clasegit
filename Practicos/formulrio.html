@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <h1>formulario</h1>
+    <form>
+      <fieldset>
+        <legend>datos personales</legend>
+        <label for="name">nombre</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="ingrese su nombre"
+          required
+        />
+        <br />
+        <label for="apellido">apellido</label>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="ingrese su apellido"
+        />
+        <br />
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday" id="birthday" />
+      </fieldset>
+      <fieldset>
+        <legend>datos del usuario</legend>
+        <label for="nombredeusuario">Nombre de usuario</label>
+        <input type="text" id="nombredeusuario" />
+        <br />
+        <label for="email">email</label>
+        <input type="email" id="email" />
+        <br />
+        <label for="password">contraseña</label>
+        <input type="password" id="password" />
+      </fieldset>
+    </form>
+
+    <fieldset>
+      <legend>Datos extras</legend>
+      <select name="pais" id="">
+        <option value="arg">argentina</option>
+        <option value="col">colombia</option>
+        <option value="mex">mexico</option>
+      </select>
+
+      <input type="radio" name="opcion 1" id="opc1">
+      <label for="opc1">opcion 1</label>
+      <input type="radio" name="opcion 1" id="opc2">
+      <label for="opc2">opcion 2</label>
+      <input type="radio" name="opcion 1" id="opc3">
+      <label for="opc3">opcion 3</label>
+
+
+      <input type="checkbox" name="check" id="">
+      <label for="">opcion 1</label>
+      <input type="checkbox" name="check" id="">
+      <label for="">opcion 2</label>
+      <input type="checkbox" name="check" id="">
+      <label for="">opcion 3</label>
+    </fieldset>
+    <textarea name="comentarios" id="comentarios"></textarea>
+    <button type="submit" onclick="alert('enviado')">enviar</button>
+    <details open>
+      <summary>preguntas frecuentes</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+        reprehenderit alias, sunt officia nisi doloribus ea veniam voluptas
+        dolores asperiores dolor totam culpa velit, tempore cumque quis. Optio,
+        neque veritatis.
+      </p>
+    </details>
+    <details>
+      <summary>preguntas frecuentes</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+        reprehenderit alias, sunt officia nisi doloribus ea veniam voluptas
+        dolores asperiores dolor totam culpa velit, tempore cumque quis. Optio,
+        neque veritatis.
+      </p>
+    </details>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/j-RpvIuazmc?si=i0afggk-5YANOWo9"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
