@@ -15,11 +15,11 @@ if(10!=variable){
 
 let var1 = 10, var2 = -5, var3 = 0
 
-if(var1>=10 /*true*/ && var2==0 /*false*/ && var3=<5 /*true*/){ //&& -> AND
-    console.log("mensaje")
+if ((var1 > 10) || (var2 == -5) || (var3 > 5)) {
+  console.log("mensaje");
 }
 
-if(var1 >10) || (var2==-5) || (var3 >5) // || -> OR
+if(var1 >10)  (var2==-5) || (var3 >5) // || -> OR
 
 if(!true){ // si es true el "!" lo cambia a false y si es false lo cambia a true
     console.log("mensaje")
@@ -27,21 +27,21 @@ if(!true){ // si es true el "!" lo cambia a false y si es false lo cambia a true
 
 //true y false -> 1 y 0
 
-console.log(True == 1)//true
-console.log(True === 1)//false
+console.log(true == 1)//true
+console.log(true === 1)//false
 
-console.log(False == 0)//true
-console.log(False ===0)//False
+console.log(false == 0)//true
+console.log(false ===0)//False
 
-let nota = A
+let nota = a
 switch (nota) {
     case "A":
         console.log(10)
         break;
-    case "B"
+    case "B":
         console.log(8)
         break
-    case "C"
+    case "C":
         console.log(6)
         break
     default:
