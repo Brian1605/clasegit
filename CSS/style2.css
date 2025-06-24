@@ -1,0 +1,39 @@
+:root{
+    --color-fondo:#fefefe;
+    --color-secundario: #34495e;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    transition: background-color 0.3s color 0.3s;
+}
+
+html{
+    font-size: 200px;
+}
+
+
+/*
+.box{
+    width: 20px;
+    height: 40px;
+    background-color: green;
+}
+
+#padre{
+    background-color: aqua;
+    width: 50vw;
+    height: 20vh;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px dotted red;
+    box-sizing: border-box;
+}
+
+#hijo{
+    width: 50%; 
+    height: 25%;
+}
+*/

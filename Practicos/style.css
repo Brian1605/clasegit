@@ -1,0 +1,55 @@
+h1{
+    color: blue;
+}
+/*codigo css*/
+#mi-titulo{
+ color: black;
+}
+.resaltado{
+    background-color: lightcoral;
+}
+.resaltado:hover{
+    background-color: lightgreen;
+}
+
+*{
+    margin: 10px;
+    padding: 0px;
+}
+
+header p strong{
+    font-size: 20px;
+}
+
+h1 + p {
+    background-color: aqua;
+}
+
+a[href="https://www.youtube.com"]{
+    background-color: lime;
+}
+
+a[href="https://google.com"]:hover{
+    color: yellow;
+}
+
+a[href="#"]:hover{
+    color: red;
+}
+
+p::first-letter{
+color:blueviolet;
+font-size: 50px;
+}
+
+p::first-line{
+    background-color: wheat;
+}
+
+h1~a {
+    background-color: red;
+}
+
+header > p {
+    color:blueviolet
+}

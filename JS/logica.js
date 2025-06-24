@@ -1,19 +1,68 @@
-let num1=10 , num2 = 5, num3 =36
+let card = document.querySelector("#tarjeta");
+let img = document.querySelector(`#img-morado`);
+let boton = document.getElementById(`boton-especial`);
+let formulario = document.getElementById(`newlletter`)
+const iemail = document.getElementById(`email`)
+//let documento2 = document.getElementsByClassName("card-title")
 
-console.log("suma con +: " + (num1+num2)) //string
-console.log("resta con-;" + (num3-num1))
-console.log("divicion con / " + (num3/num2))
-console.log("multiplicacion con *:" + (num3*num1))
-console.log("modulo con %: " + (num3%num2))
-console.log("potencia con **:" + (num2**num3))
-console.log("suma con+:" + num1+num2) //concatenando los valores
 
-String(num1).concat ("hola") //10->"10"
-console.log(String(num1).concat ("hola"))
+//node no existe document // process
 
-let cadena1 = "hola mundo"
+//selectores .titulo-especial (clase) #titulo-especial (id)
 
-console.log(cadena1)
+card.style.backgroudColor = "#ff00ff";
 
-let nombre = prompt("ingrese su nombre")
-console.log(nombre)
+boton.onclick = ()=>{
+    console.log(`doble click`)
+    let nuevoElemento = document.createElement(`button`)
+    card.appendChild(nuevoElemento)
+    nuevoElemento.textContent = `algo`
+
+    //funcion que cambia estilo
+    //funcion que borra algo
+}
+
+boton.addEventListener(`click`,()=>{
+    console.log(`click al boton`)
+})
+
+document.addEventListener(`keydown`,()=>{
+    console.log(`tecla presionada` + e.key)
+    if(e.key ==`a`){
+        //funcion de movimiento
+    }
+})
+
+formulario.addEventListener(`submit`,(e)=>{
+    e.preventDefault()
+})
+
+
+
+///sin fragments
+
+const lista = document.getElementById(`mi-lista`)
+
+const nombres = ["ana", "luis", "carlos", "maria"]
+
+nombres.forEach(nombre=>{
+    const li = document.createElement(`li`)
+    li.textContent = nombre
+    lista.appendChild(li)
+})
+
+///con fragments
+
+const lista2 = document.getElementById(`mi-lista`)
+
+const nombres2 = ["ana", "luis", "carlos", "maria"]
+
+const fragments = document.createDocumentFragment()
+
+nombres2.forEach(nombre=>{
+    const li = document.createElement(`li`)
+    li.textContent = nombre
+    fragments.appendChild(li)
+})
+
+lista2.appendChild(fragments)
